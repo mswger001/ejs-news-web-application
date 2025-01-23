@@ -1,0 +1,9 @@
+[build]
+  base = "."
+  publish = "dist"  # Folder where the build files will be located
+  command = "npm run build"  # Command to build your app
+
+[[redirects]]
+  from = "/api/*"
+  to = "/dist/server.js"
+  status = 200
